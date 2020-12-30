@@ -27,7 +27,7 @@ section {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 24px;
   color: ghostwhite;
   white-space: nowrap;
   text-transform: uppercase;
@@ -64,7 +64,7 @@ h2 {
 .main-header ul li .nav {
   position: relative;
   padding-right: 1vw;
-  font-size: 32px;
+  font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
   color: ghostwhite;

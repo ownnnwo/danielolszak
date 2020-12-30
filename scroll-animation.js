@@ -11,7 +11,7 @@ sections.forEach((section) => {
         opacity: 1,
         stagger: 0.2,
         duration: 2,
-        scrollTrigger: { trigger: section, start: "top 60%" },
+        scrollTrigger: { trigger: section, start: "top 60%"},
       }
     );
 });
