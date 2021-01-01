@@ -194,6 +194,9 @@ h2 {
   top: 40%;
   left: 2vw;
 }
+.side-nav ul {
+  list-style-type: none;
+}
 .side-nav a {
   text-decoration: none;
   color: ghostwhite;
