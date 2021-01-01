@@ -28,7 +28,6 @@ about.addEventListener("click", () => {
   smoothScroll(".about-section", 700);
 });
 
-
 let work = document.querySelector(".work");
 
 work.addEventListener("click", () => {

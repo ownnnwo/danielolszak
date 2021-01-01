@@ -15,6 +15,7 @@ body {
   background-color: black;
   width: 70%;
   margin: 0 auto;
+  margin-left: 15%;
 }
 
 section {
@@ -27,7 +28,7 @@ section {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 48px;
   color: ghostwhite;
   white-space: nowrap;
   text-transform: uppercase;
@@ -64,7 +65,7 @@ h2 {
 .main-header ul li .nav {
   position: relative;
   padding-right: 1vw;
-  font-size: 24px;
+  font-size: 48px;
   text-transform: uppercase;
   text-decoration: none;
   color: ghostwhite;
@@ -183,6 +184,20 @@ h2 {
   color: ghostwhite;
   text-align: right;
   margin: 2vw 0;
+}
+
+.side-nav {
+  position: fixed;
+  z-index: 1;
+  font-size: 1.2vw;
+  font-weight: 700;
+  top: 40%;
+  left: 2vw;
+}
+.side-nav a {
+  text-decoration: none;
+  color: ghostwhite;
+  text-transform: uppercase;
 }
 
 /*CHANGE NAMES*/

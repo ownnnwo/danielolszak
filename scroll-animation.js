@@ -1,5 +1,4 @@
 const photoGrid = document.querySelector(".photo-grid");
-
 const sections = document.querySelectorAll("section");
 
 sections.forEach((section) => {

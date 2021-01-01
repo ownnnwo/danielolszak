@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Olszak</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
-    
   </head>
   <body>
-
+    <!--
     <header class="main-header">
-      <div class="additional-info">
+
         <h1>Daniel Olszak</h1>
-        <nav class="main-nav">
-          <ul>
-            <li><a class="nav about" href="#">About</a></li>
-            <li><a class="nav work" href="#">Work</a></li>
-            <li><a class="nav contact" href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+
     </header>
-  
+  -->
+    <nav class="side-nav">
+      <ul>
+        <li><a class = "about" href="#">About</a></li>
+        <li><a class = "work" href="#">Work</a></li>
+        <li><a class = "contact" href="#">Contact</a></li>
+      </ul>
+    </nav>
+
     <!--  <div id="cube">
     <script src="three.js"></script>
     <script>
@@ -77,64 +77,61 @@ animate();
 		</script>
  </div>
  -->
- <main>
-    <section class="photo-section">
-      <div class="photo-grid">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-        <p class="profession">Front-End<br />Developer</p>
-      </div>
-    </section>
-
-    <section class="about-section">
-      <div class="about-grid">
-        <div class="box">
-          <h2>About</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ullamcorper sit amet risus nullam eget felis eget nunc lobortis.
-            Pellentesque dignissim enim sit amet venenatis urna cursus. Maecenas
-            sed enim ut sem.
-          </p>
+    <main>
+      <section class="photo-section">
+        <div class="photo-grid">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+          <p class="profession">Front-End<br />Developer</p>
         </div>
-        <div class="box"></div>
-      </div>
-    </section>
+      </section>
 
-    <section class="work-section">
-      <div class="columns">
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-      </div>
-      <h2 style="text-align: right">Some of my work.</h2>
-    </section>
+      <section class="about-section">
+        <div class="about-grid">
+          <div class="box">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ullamcorper sit amet risus nullam eget felis eget nunc lobortis.
+              Pellentesque dignissim enim sit amet venenatis urna cursus.
+              Maecenas sed enim ut sem.
+            </p>
+          </div>
+          <div class="box"></div>
+        </div>
+      </section>
 
-    <section class="contact-section">
-      <h2>Contact</h2>
-      <div class="contact-grid">
-        <div class="a"></div>
-        <div class="b"></div>
-        <div class="c">send</div>
-      </div>
-    </section>
+      <section class="work-section">
+        <div class="columns">
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+        <h2 style="text-align: right">Some of my work.</h2>
+      </section>
+
+      <section class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="a"></div>
+          <div class="b"></div>
+          <div class="c">send</div>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <p class="copyright">Daniel Olszak 2020 ©</p>
     </footer>
-      
-     
-  </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-
-  <script src="./smooth-navigation.js"></script>
-  <script src="./scroll-animation.js "></script>
- 
+    <script src="./smooth-navigation.js"></script>
+    <script src="./scroll-animation.js "></script>
+    <script src="./side-menu.js "></script>
   </body>
 </html>
