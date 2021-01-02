@@ -2,14 +2,12 @@ function smoothScroll(target, duration) {
   let toMove = document.querySelector(target);
   let toMovePosition = toMove.getBoundingClientRect().top;
   let startPosition = window.pageYOffset;
-  console.log(startPosition);
-  let distance = (toMovePosition - startPosition);
   let startTime = null;
 
   function animationScroll(currentTime) {
     if (startTime === null) startTime = currentTime;
     let timeElapsed = currentTime - startTime;
-    let run = ease(timeElapsed, startPosition, distance, duration);
+    let run = ease(timeElapsed, startPosition, toMovePosition, duration);
     window.scrollTo(0, run);
     if (timeElapsed < duration) requestAnimationFrame(animationScroll);
   }
@@ -26,17 +24,22 @@ function smoothScroll(target, duration) {
 let about = document.querySelector(".about");
 
 about.addEventListener("click", () => {
-  smoothScroll(".about-section", 700);
+  smoothScroll(".about-section", 1000);
 });
 
 let work = document.querySelector(".work");
 
 work.addEventListener("click", () => {
-  smoothScroll(".work-section", 1400);
+  smoothScroll(".work-section", 1000);
 });
 
 let contact = document.querySelector(".contact");
 
 contact.addEventListener("click", () => {
-  smoothScroll(".contact-section", 2100);
+  smoothScroll(".contact-section", 1000);
+});
+let home = document.querySelector(".home");
+
+home.addEventListener("click", () => {
+  smoothScroll(".photo-section", 1000);
 });
