@@ -25,7 +25,6 @@ if(section.className !== "photo-section"){
     start: "top 50%",
     end: "30%",
 
-    markers: true,
     onToggle: () => animation.play(),
     onLeave: () => animation.reverse(),
     onLeaveBack: () => animation.reverse(),
