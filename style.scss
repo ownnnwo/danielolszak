@@ -1,6 +1,6 @@
-$pink: #df466f;
-$blue: #1fd1d1;
-$sand: #faf3db;
+$pink: #d63963;
+$blue: #16c4db;
+$sand: #f8dfc1;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 /*
@@ -58,30 +58,9 @@ h2 {
     display: flex;
     justify-content: space-between;
   }
-  ul {
-    display: flex;
-    list-style-type: none;
-
-    li {
-      padding-right: 1vw;
-      font-weight: bold;
-
-      .nav {
-        position: relative;
-        padding-right: 1vw;
-        font-size: 48px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: ghostwhite;
-        transition: opacity 0.3s ease-in;
-        will-change: opacity;
-      }
-
-      .nav:hover {
-        opacity: 50%;
-      }
-    }
-  }
+ 
+    
+  
 }
 
 .photo-section {
