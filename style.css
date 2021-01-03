@@ -227,5 +227,75 @@ h2 {
 }
 
 /*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 500px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  section {
+    height: 80vh;
+  }
+
+  .photo-section .photo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+  }
+  .photo-section .photo-grid .profession {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 8vw;
+  }
+  .photo-section .photo-grid .one {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #16c4db;
+  }
+  .photo-section .photo-grid .two {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: #d63963;
+  }
+  .photo-section .photo-grid .three {
+    grid-column: 1;
+    grid-row: 4;
+    background-color: #f8dfc1;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-gap: 1.5vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .about-grid .box {
+    height: 35vh;
+    background-color: #d63963;
+  }
+  .about-grid .box p {
+    font-size: 3.5vw;
+  }
+  .about-grid .box h2 {
+    font-size: 6vw;
+  }
+
+  .columns {
+    display: grid;
+    grid-row-gap: 1vh;
+    justify-content: space-between;
+  }
+  .columns .column {
+    width: 80vw;
+    height: 15vh;
+    background-color: #f8dfc1;
+    transition: opacity ease-out 0.3s;
+  }
+
+  footer {
+    height: 20vh;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

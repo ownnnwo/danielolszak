@@ -58,9 +58,6 @@ h2 {
     display: flex;
     justify-content: space-between;
   }
- 
-    
-  
 }
 
 .photo-section {
@@ -194,9 +191,7 @@ h2 {
   top: 40%;
   left: 2vw;
 
-
-
-  ul{
+  ul {
     list-style-type: none;
   }
   a {
@@ -244,3 +239,95 @@ h2 {
   background: transparent;
 }
 /*# sourceMappingURL=main.css.map */
+
+@media only screen and (max-width: 500px) {
+
+  body{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  section{
+    height: 80vh;
+  }
+
+
+  .photo-section {
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-gap: 2vw;
+     
+
+      .profession {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 8vw;
+
+      }
+
+      .one {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: $blue;
+      }
+
+      .two {
+        grid-column: 1;
+        grid-row: 3;
+        background-color: $pink;
+      }
+
+      .three {
+        grid-column: 1;
+        grid-row: 4;
+        background-color: $sand;
+      }
+    }
+  }
+
+
+  .about-grid {
+    display: grid;
+    grid-gap: 1.5vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ;
+  
+    .box {
+      height: 35vh;
+      background-color: $pink;
+
+      p{
+        font-size: 3.5vw;
+      }
+
+      h2{
+        font-size: 6vw;
+      }
+    }
+
+  
+  }
+
+  
+.columns {
+  display: grid;
+  grid-row-gap: 1vh;
+  justify-content: space-between;
+
+  .column {
+    width: 80vw;
+    height: 15vh;
+    background-color: $sand;
+    transition: opacity ease-out 0.3s;
+  }
+}
+
+
+
+
+footer{
+  height: 20vh
+}
+}
