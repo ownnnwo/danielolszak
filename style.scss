@@ -241,30 +241,26 @@ h2 {
 /*# sourceMappingURL=main.css.map */
 
 @media only screen and (max-width: 600px) {
-
-  body{
+  body {
     width: 80%;
     margin: 0 auto;
   }
 
-  section{
+  section {
     height: 80vh;
   }
-
 
   .photo-section {
     .photo-grid {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-gap: 2vw;
-     
+      grid-gap: 3vw;
 
       .profession {
         grid-column: 1;
         grid-row: 1;
         font-size: 8vw;
-
       }
 
       .one {
@@ -287,91 +283,92 @@ h2 {
     }
   }
 
-
   .about-grid {
-    display: grid;
-    grid-gap: 1.5vw;
+    grid-gap: 3vw;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr ;
-  
+    grid-template-rows: 2fr 1fr;
+
     .box {
-      height: 35vh;
+      height: auto;
       background-color: $pink;
 
-      p{
-        font-size: 3.5vw;
+      p {
+        font-size: 2vh;
       }
 
-      h2{
-        font-size: 6vw;
+      h2 {
+        font-size: 3vh;
       }
     }
-
-  
   }
 
-  
-.columns {
-  display: grid;
-  grid-row-gap: 1vh;
-  justify-content: space-between;
+  .columns {
+    display: grid;
+    grid-row-gap: 3vw;
+    justify-content: space-between;
 
-  .column {
-    width: 80vw;
-    height: 15vh;
-    background-color: $sand;
-    transition: opacity ease-out 0.3s;
-  }
-}
-
-
-.side-nav {
-  display: none;
-}
-
-footer{
-  height: 10vh
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr  2fr 1fr;
-  grid-gap: 1.5vw;
-  height: 70vh;
-
-  .a {
-    background-color: $pink;
-    grid-row: 1;
-    grid-column: 1;
+    .column {
+      width: 80vw;
+      height: 12vh;
+      background-color: $sand;
+      transition: opacity ease-out 0.3s;
+    }
   }
 
-  .b {
-    background-color: $blue;
-    grid-row: 2;
-    grid-column: 1;
+  .side-nav {
+    display: none;
   }
 
-  .c {
-    background-color: $sand;
-    grid-row: 3;
-    grid-column: 1;
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+    .copyright{
+      font-size: 3.5vw;
+      text-align: center;
 
-    font-size: 128px;
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    align-self: center;
-    width: 100%;
-    height: 100%;
+    }
   }
-}
 
+  .contact-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
 
+    height: 70vh;
 
+    .a {
+      background-color: $pink;
+      grid-row: 1;
+      grid-column: 1;
+    }
 
+    .b {
+      grid-row: 2;
+      grid-column: 1;
+    }
 
+    .c {
+      background-color: $sand;
+      grid-row: 3;
+      grid-column: 1;
 
+      font-size: 80px;
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      align-self: center;
 
+      height: auto;
+    }
+  }
 
+  h2 {
+    font-size: 8vw;
+    color: white;
+  }
+
+  section {
+    scroll-snap-type: y mandatory;
+  }
 }
